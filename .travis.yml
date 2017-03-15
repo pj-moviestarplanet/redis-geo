@@ -18,8 +18,6 @@ addons:
       key_url: 'https://apt-mo.trafficmanager.net/keys/microsoft.asc'
     packages:
     - dotnet-dev-1.0.1
-before_script:
-  dotnet restore  
 script:
   - chmod +x ./deploy-envs.sh
   - chmod +x ./scripts/build.sh
