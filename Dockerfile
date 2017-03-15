@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:1.1-sdk-msbuild
+FROM microsoft/dotnet
 COPY src /app
 WORKDIR /app
 RUN ["dotnet", "restore"]
