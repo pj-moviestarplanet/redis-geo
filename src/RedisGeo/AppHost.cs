@@ -5,6 +5,7 @@ using ServiceStack;
 using RedisGeo.ServiceInterface;
 using ServiceStack.Configuration;
 using ServiceStack.Redis;
+using System;
 
 namespace RedisGeo
 {
