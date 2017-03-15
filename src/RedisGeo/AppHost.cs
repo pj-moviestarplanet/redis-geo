@@ -32,6 +32,7 @@ namespace RedisGeo
 
         public void ImportCountry(IRedisClientsManager redisManager, string countryCode)
         {
+            Console.WriteLine($"Redis host setting is {AppSettings.Get("REDIS_HOST", defaultValue: "localhost")}");
             using (var redis = redisManager.GetClient())
             using (var reader = new StreamReader(File.OpenRead(MapProjectPath($"~/App_Data/{countryCode}.txt"))))
             {
