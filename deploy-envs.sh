@@ -5,9 +5,7 @@ export IMAGE_NAME=netcoreapps-redisgeo
 export IMAGE_VERSION=latest
 
 export AWS_DEFAULT_REGION=eu-west-1
-
 export AWS_ECS_CLUSTER_NAME=default
-
 export AWS_VIRTUAL_HOST=ecsdemo.devmsp.io
 
 # set any sensitive information in travis-ci encrypted project settings:
